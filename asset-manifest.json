@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/NgaThinhTravel/static/css/main.488cc4a6.css",
+    "main.js": "/NgaThinhTravel/static/js/main.693c8660.js",
+    "static/media/video.mp4": "/NgaThinhTravel/static/media/video.485342818f1d1f1ecc15.mp4",
+    "static/media/img(2).jpg": "/NgaThinhTravel/static/media/img(2).608b7945bcf6e7c84619.jpg",
+    "static/media/img(1).jpg": "/NgaThinhTravel/static/media/img(1).2c932818f28350588015.jpg",
+    "static/media/img(4).jpg": "/NgaThinhTravel/static/media/img(4).c04ea8cc7a1e78a56c3e.jpg",
+    "static/media/img(5).jpg": "/NgaThinhTravel/static/media/img(5).5094b6ff9bb965683cc8.jpg",
+    "index.html": "/NgaThinhTravel/index.html",
+    "main.488cc4a6.css.map": "/NgaThinhTravel/static/css/main.488cc4a6.css.map",
+    "main.693c8660.js.map": "/NgaThinhTravel/static/js/main.693c8660.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.488cc4a6.css",
+    "static/js/main.693c8660.js"
+  ]
+}
