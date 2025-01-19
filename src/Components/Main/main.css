@@ -1,0 +1,190 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(250, 250, 250);
+}
+
+body {
+    background-color: var(--bodyColor);
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    width: 100%;
+    padding: 2rem 1.5rem;
+    /* Add padding around the section */
+}
+
+.main .secTitle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main .secTitle .title {
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--blackColor);
+    margin-bottom: 1rem;
+}
+
+.main .secTitle .title::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 120px;
+    background-color: var(--SecondaryColor);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.main .secContent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Create 3 equal columns */
+    gap: 1.5rem;
+    /* Space between the cards */
+    max-width: 1200px;
+    /* Optional: Limit the width of the content */
+    margin: 0 auto;
+    /* Center the content horizontally */
+}
+
+.main .singleDestination {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Ensure consistent height */
+    background: var(--cardBG);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main .singleDestination:hover {
+    background: var(--cardHover);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.main .singleDestination .imageDiv {
+    height: 180px;
+    overflow: hidden;
+}
+
+.main .singleDestination .imageDiv img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.main .singleDestination .imageDiv:hover img {
+    transform: scale(1.1);
+}
+
+.main .singleDestination .cardInfo {
+    flex: 1;
+    /* Ensures card information stretches */
+    padding: 1.5rem;
+}
+
+.main .singleDestination .cardInfo .destTitle {
+    font-size: 1.25rem;
+    color: var(--blackColor);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.main .singleDestination .cardInfo .continent {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.main .singleDestination .cardInfo .continent .icon {
+    color: var(--SecondaryColor);
+    font-size: 18px;
+}
+
+.main .singleDestination .cardInfo .continent .name {
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.main .singleDestination .cardInfo .fees {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--greyText);
+    border-bottom: 1px solid var(--greyText);
+    padding: 0.75rem 0;
+    margin: 1rem 0;
+}
+
+.main .singleDestination .cardInfo .fees .grade {
+    font-size: 0.85rem;
+    color: var(--textColor);
+}
+
+.main .singleDestination .cardInfo .fees .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blackColor);
+}
+
+.main .singleDestination .cardInfo .desc {
+    font-size: 0.9rem;
+    color: var(--textColor);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.main .singleDestination .cardInfo .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--SecondaryColor);
+    color: var(--whiteColor);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main .singleDestination .cardInfo .btn:hover {
+    background: var(--PrimaryColor);
+}
+
+.main .singleDestination .cardInfo .btn .icon {
+    font-size: 18px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
+
+.price h5 {
+    font-size: 16px;
+    /* Adjust the size to be smaller */
+    color: #e86316;
+    /* Yellow color for highlighting */
+    font-weight: bold;
+    /* Optional for better emphasis */
+}

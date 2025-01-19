@@ -1,0 +1,171 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDream: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --Cam: hsl(32, 89%, 52%);
+}
+
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensures space between nav and button */
+    background: var(--whiteColorDream);
+    width: 100%;
+    padding: 1rem;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.301);
+}
+
+.header .logo {
+    color: var(--blackColor);
+    font-weight: 600;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .logo .icon {
+    font-size: 25px;
+    color: var(--Cam);
+    transform: translateY(5px);
+}
+
+@media screen and (max-width: 768px) {
+    .header .navBar {
+        position: absolute;
+        background: var(--whiteColor);
+        height: -webkit-max-content;
+        height: -moz-max-content;
+        height: max-content;
+        width: 80%;
+        border-radius: 1rem;
+        top: -500rem;
+        left: 50%;
+        padding: 1rem;
+        transform: translate(-50%);
+        z-index: 2000;
+        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        transition: 0.1s ease-in-out;
+    }
+    .header .navBar .navLists {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        padding: 0.5rem 0;
+    }
+    .header .navBar .navLists .navItem {
+        padding: 0.5rem 0;
+    }
+    .header .navBar .navLists .navItem .navLink {
+        color: var(--textColor);
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+    .header .navBar .navLists .navItem .navLink:hover {
+        color: var(--PrimaryColor);
+    }
+    .header .navBar .navLists .btn {
+        margin-top: 1rem;
+    }
+    .header .navBar .navLists .btn a {
+        font-weight: 600;
+        color: var(--whiteColor);
+    }
+    .header .navBar .closeNavbar {
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        color: var(--PrimaryColor);
+    }
+    .header .navBar .closeNavbar:hover {
+        color: var(--SecondaryColor);
+    }
+    .header .activeNavbar {
+        top: 7rem;
+    }
+}
+
+.header .toggleNavbar .icon {
+    font-size: 25px;
+    color: var(--PrimaryColor);
+}
+
+.header .toggleNavbar:hover.icon {
+    color: var(--SecondaryColor);
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    /* Add space between menu items */
+}
+
+.btn {
+    margin-left: auto;
+    /* Push the button to the right */
+    padding: 0.5rem 1rem;
+    background: var(--PrimaryColor);
+    border: none;
+    border-radius: 5px;
+    color: var(--whiteColor);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn a {
+    text-decoration: none;
+    color: var(--whiteColor);
+}
+
+.btn:hover {
+    background: var(--SecondaryColor);
+}
+
+.navLists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    /* Adds space between each <li> */
+    list-style: none;
+    /* Removes default bullets */
+    padding: 0;
+    /* Removes extra padding */
+    margin: 0;
+    /* Removes extra margin */
+}
+
+.navItem {
+    margin: 0;
+    /* Resets margins if needed */
+}
+
+.navLink {
+    text-decoration: none;
+    /* Removes underline */
+    color: var(--textColor);
+    font-weight: 600;
+    /* Adjust font weight */
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: var(--PrimaryColor);
+    /* Adds hover effect */
+}
+
+
+/*# sourceMappingURL=navbar.css.map */
